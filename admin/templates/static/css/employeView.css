@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+html {
+  height: 100%;
+}
+body { 
+  min-height: 100vh; 
+  margin: 0;  
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+#logo {
+    margin-left: 10%;
+    height: 70px;
+    width: 70px;
+}
+#h-logo {
+  font-size: 16px;
+  display: inline;
+  padding-top: 17px;
+  color: #6ec8fc;
+  letter-spacing: .3em;
+}
+
+header {
+    background-image: linear-gradient(to bottom, #7c90ff, #6ec8fc);
+    box-sizing: border-box;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 2;
+    box-shadow: 0px 2px 8px #00000065;
+}
+  
+.nav-top {
+ padding-left: 80vw;
+ display: flex;
+}
+
+#id-role {
+  height: 25px;
+  border: 1px solid #034b82;
+  background-color: #5a5affaf;
+  border-radius: 5px;
+}
+
+#id-role > option {
+  color: white;
+}
+
+h1 {
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+button {
+  border: none;
+}
+a {
+    text-decoration: none;
+    font: bold 1em arial;
+    color: white;
+}
+
+.aside-item:hover {
+  background-color: #7c90ff3f;
+  padding-top: 15px;
+  border-radius: 5px;
+  transition: .2s ease-in-out;
+}
+
+ul li {
+  list-style: none;
+  padding: 10px;
+}
+
+.aside-nav {
+  position: fixed;
+  background-image: linear-gradient(to right, #7c90ff3f, #6ec8fc);
+
+  width: 220px;
+  height: 100vh;
+  box-shadow: 0px 2px 8px #00000065;
+  z-index: 3;
+}
+
+.aside-item {
+  color: #034b82;
+  font-size: 18px;
+  padding-left: 10px;
+}
+
+
+
+
+.main-container {
+  padding-top: 15px;
+  margin: 0px 25px 25px 245px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 18px;
+  margin: 8px 0px;
+}
+
+#back-btn {
+  float: right;
+  font-size: 14px;
+  color: white;
+  padding: 8px;
+  border: 1px solid #034b82;
+  border-radius: 5px;
+  background-color: #5a5affaf;
+}
+#back-btn:hover {
+  background-color: #034b82;
+  transition: .2s ease-in-out;
+}
+
+
+footer {
+  background-color: #202020;
+  bottom: 0;
+  width: 100%;
+  min-height: 80px;
+  position: relative;
+  z-index: 4;
+}
